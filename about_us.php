@@ -15,7 +15,7 @@ h2, h3 {
 
 /* Introduction paragraph */
 p {
-    color: #666;
+    color: #444;
     line-height: 1.6;
 }
 
@@ -43,7 +43,7 @@ ul {
 /* Testimonials blockquote */
 blockquote {
     font-style: italic;
-    color: #888;
+    color: #777;
 }
 
 /* Testimonials cite */
