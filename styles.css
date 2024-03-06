@@ -236,7 +236,7 @@ main {
 }
 
 
-/* Eto yata ung sa mga PRODUCTS */
+/* Eto ung sa mga PRODUCTS */
 .card-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -426,6 +426,38 @@ main {
     .jumbotron {
         padding: 2rem 1rem; /* Bawasan ang padding sa jumbotron para magmukhang mas maayos sa mobile screen */
     }
+
+    /* Mobile screens for card-container */
+@media (max-width: 768px) {
+    .card-container {
+        display: none;
+    }
+    #dry_dogfood {
+        display: block;
+    }
+}
+
+@media (min-width: 769px) {
+    .card-container {
+        display: block;
+    }
+}
+
+    /* Mobile screens for card-container */
+@media (max-width: 768px) {
+    .card-container {
+        display: none;
+    }
+    #wet_dogfood {
+        display: block;
+    }
+}
+
+@media (min-width: 769px) {
+    .card-container {
+        display: block;
+    }
+}
 
     /* Card-Trivia at Card-Care */
     .card-trivia,

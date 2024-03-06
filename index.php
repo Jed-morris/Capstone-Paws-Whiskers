@@ -114,7 +114,7 @@
                         <div class="card-body">
                             <h5 class="card-title">Pedigree- Country Stew</h5>
                             <p class="card-text">Bestsellers of Wet Dog Food</p>
-                            <a href="dry_dog_food.php" class="btn btn-primary">Buy Now</a>
+                            <a href="wet_dog_food.php" class="btn btn-primary">Buy Now</a>
                         </div>
                     </div>
                 </div>
