@@ -1,0 +1,460 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: 'Helvetica', sans-serif;
+}
+
+main {
+    flex: 1;
+    overflow-y: auto;
+}
+
+/* Navbar styling */
+.navbar {
+    background-color: steelblue;
+    color: white;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar-nav .nav-item {
+    margin-right: 15px;
+}
+
+.navbar-nav .nav-item.active .nav-link {
+    color: #ffffff !important; /* Kulay ng teksto */
+    background-color: #007bff !important; /* Kulay ng background */
+}
+
+.navbar-nav .nav-link {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.navbar-nav .nav-link:hover {
+    color: orange;
+}
+
+.nav-icons {
+    display: flex;
+    align-items: center;
+}
+
+.nav-icons .fas {
+    font-size: 1.25rem;
+    cursor: pointer;
+}
+
+.nav-icons span {
+    margin-left: 5px;
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+/* Search bar styling (assuming it's a separate element) */
+#search-bar {
+    display: none; /* Hide the search bar by default */
+    position: absolute;
+    top: 60px;
+    right: 0;
+    padding: 10px;
+    width: 200px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#search-bar input[type="text"] {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+/* Cart styling (assuming it's a separate element) */
+#cart {
+    display: none; /* Hide the cart by default */
+    position: absolute;
+    top: 60px;
+    right: 0;
+    padding: 10px;
+    width: 200px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#cart .item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+#cart .item img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+#cart .item p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+#cart .item .quantity {
+    margin-left: auto;
+    font-weight: bold;
+}
+
+#login {
+    display: none;
+}
+
+/* Custom CSS for Carousel */
+.carousel-item {
+    min-height: 300px; /* Set a minimum height for the carousel items */
+    color: #fff; /* Text color for the carousel content */
+    justify-content: center; /* Center the content horizontally */
+    align-items: center; /* Center the content vertically */
+}
+
+.carousel-item img {
+        height: 100vh; /* Set the height to 100% of the viewport height */
+        width: 100%; /* Set the width to 100% */
+        object-fit: cover; /* Ensure the image covers the entire space of the carousel item */
+        }
+
+.carousel-item h2 {
+    font-size: 2.5rem; /* Font size for the heading */
+    margin-bottom: 20px; /* Bottom margin for the heading */
+}
+
+.carousel-item p {
+    font-size: 1.5rem; /* Font size for the paragraph */
+    max-width: 80%; /* Limit the width of the paragraph */
+    text-align: center; /* Center align the paragraph */
+}
+
+/* Styling for carousel indicators */
+.carousel-indicators {
+    bottom: 20px; /* Position the indicators at the bottom */
+}
+
+.carousel-indicators button {
+    width: 10px; /* Set the width of the indicator */
+    height: 10px; /* Set the height of the indicator */
+    border-radius: 50%; /* Make the indicator round */
+    border: 2px solid #fff; /* Add a border to the indicator */
+    background-color: transparent; /* Make the background of the indicator transparent */
+}
+
+.carousel-indicators .active {
+    background-color: #fff; /* Set the background color of the active indicator */
+}
+
+/* Styling for carousel controls */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    border-radius: 50%; /* Make the controls round */
+            padding: 10px; /* Add padding to the controls */
+            margin-top: -20px; /* Position the controls above the carousel */
+            background-color: rgba(255, 255, 255, 0.5); /* Set the background color of the controls */
+        }
+
+.carousel-control-prev-icon {
+    margin-right: 10px; /* Add margin to the right of the previous control */
+}
+
+.carousel-control-next-icon {
+    margin-left: 10px; /* Add margin to the left of the next control */
+}
+
+.jumbotron {
+    background: url(https://cat-world.com/wp-content/uploads/2017/04/can-cats-eat-dog-food-1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    margin: 20px; /* Add space around the jumbotron */
+    display: flex;
+    justify-content: flex-start;  /* Align text to the top */
+    align-items: flex-start;  /* Align text to the top */
+    flex-direction: column;
+    padding-top: 50px; /* Add padding to the top of the jumbotron */
+    color: white; /* Set text color for the jumbotron */
+}
+
+/* Styling for the container */
+.container-fluid {
+    background-color: #f8f9fa; /* Light gray background color */
+    padding: 50px 0; /* Add some padding for spacing */
+}
+
+/* Styling for the cards */
+.card-trivia, .card-care {
+    border: 1px solid #ced4da; /* Gray border */
+    border-radius: 10px; /* Rounded corners */
+    margin-bottom: 20px; /* Add some space between cards */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    margin-left: 40px; /* Add margin to the left */
+    margin-right: 40px; /* Add margin to the right */
+}
+
+/* Ensure the cards have the same height */
+.card-body {
+    display: flex; /* Use flexbox for alignment */
+    flex-direction: column; /* Align items vertically */
+    height: 100%; /* Fill the height of the parent card */
+}
+
+/* Style the card title */
+.card-title {
+    text-align: center;
+    padding: 5px 2px 2px 2px;
+    font-size: 1.5rem; /* Larger font size for title */
+    margin-bottom: 10px; /* Add space below the title */
+}
+
+/* Style the card text */
+.card-text {
+    flex-grow: 1; /* Allow text to grow and fill the remaining space */
+    font-size: 1rem; /* Regular font size for text */
+    justify-content: center;
+}
+
+
+.item-list {
+    width: 100%;
+    margin-top: 3rem;
+}
+
+
+/* Eto yata ung sa mga PRODUCTS */
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin-top: 35px; /* Add space at the top */
+    margin-bottom: 20px; /* Add space at the bottom */
+}
+
+.card-product {
+    border: 1px solid #ced4da; /* Gray border */
+    border-radius: 10px; /* Rounded corners */
+    margin-bottom: 20px; /* Add some space between cards */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    min-height: 400px; /* Adjust the height as needed */
+    padding-top: 20px; /* Add padding space on top */
+    display: flex; /* Use flexbox for alignment */
+    flex-direction: column; /* Align items vertically */
+    justify-content: space-between; /* Space between elements */
+}
+
+.card-img-top {
+    object-fit: cover;
+    height: 200px;
+}
+
+.card-body {
+    text-align: center; /* Center-align text */
+    flex-grow: 1; /* Allow text to grow and fill the remaining space */
+}
+
+.card-body p {
+    margin: 0 auto; /* Center-align paragraph */
+}
+
+.card-body a.btn {
+    display: block; /* Convert the anchor tag to a block element */
+    width: 50%; /* Set button width */
+    margin: 0 auto; /* Center-align button */
+    margin-top: auto; /* Push button to the top */
+    margin-bottom: 0; /* Remove default margin-bottom */
+    padding-bottom: 20px; /* Add padding space below the button */
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.slider .shopping-cart {
+    position: absolute;
+    display: none;
+    top: 60px;
+    right: -50%;
+    padding: 1rem;
+    border-radius: .5rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width: 30rem;
+    background: steelblue;
+}
+
+.slider .shopping-cart.active {
+    display: block;
+    right: 0;
+    transition: .4s linear;
+}
+
+.slider .shopping-cart .item-box {
+    display: grid;
+    grid-template-columns: 50px 150px 1fr auto;
+    gap: 0;
+    text-align: center;
+    align-items: center;
+}
+
+.slider .shopping-cart .item-box .quantity span {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-color: white;
+    color: #555;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.slider .shopping-cart .item-box .quantity span:nth-child(2) {
+    background-color: transparent;
+    color: #eee;
+}
+
+.slider .shopping-cart .item-box:nth-child(even) {
+    background-color: lightblue;
+}
+
+/* Footer styles */
+.footer {
+    background-color: steelblue;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+}
+
+.footer h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.footer p {
+    font-size: 1rem;
+    color: #ccc;
+    margin-bottom: 0.5rem;
+}
+
+.footer .share a {
+    display: inline-block;
+    width: 2.5rem;
+    height: 2.5rem;
+    line-height: 2.5rem;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    color: steelblue;
+    margin: 0 0.5rem;
+    background: #fff;
+    text-align: center;
+}
+
+.footer .share a:hover {
+    background: #eee;
+    color: steelblue;
+}
+
+.footer .email {
+    width: 60%;
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+    background: #fff;
+    font-size: 0.9rem;
+    color: #333;
+}
+
+.footer .credit {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    color: #ccc;
+}
+
+/* Style the button */
+#scrollToTopBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 20px; /* Place the button 20px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: #007bff; /* Blue background */
+    color: white; /* White text */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+  }
+  
+  /* On hover, add a grey background color */
+  #scrollToTopBtn:hover {
+    background-color: #555;
+  }
+  
+@media (min-width: 768px) {
+    .card {
+        margin-bottom: 20px; /* Add margin between each card for medium screens and larger */
+    }
+}
+
+@media (max-width: 767.98px) {
+    .card {
+        margin-bottom: 10px; /* Adjust margin between each card for smaller screens */
+    }
+}
+
+/* Media query para sa screen sizes ng mobile */
+@media (max-width: 767px) {
+    /* Carousel */
+    .carousel-item img {
+        max-width: 100%; /* Gawing responsive ang mga larawan sa carousel */
+        height: auto;
+    }
+
+    /* Jumbotron */
+    .jumbotron {
+        padding: 2rem 1rem; /* Bawasan ang padding sa jumbotron para magmukhang mas maayos sa mobile screen */
+    }
+
+    /* Card-Trivia at Card-Care */
+    .card-trivia,
+    .card-care {
+        margin-bottom: 10px; /* Bawasan ang spacing sa pagitan ng dalawang card */
+    }
+}
+
+/* Media query para sa tablet screens */
+@media (max-width: 768px) {
+    .jumbotron {
+        padding: 2rem 1rem; /* Palakihin ang padding */
+    }
+
+    .card-trivia,
+    .card-care {
+        margin-bottom: 20px; /* Dagdagan ang space sa pagitan ng mga card */
+    }
+}
+
+/* Media query para sa mobile screens */
+@media (max-width: 576px) {
+    .jumbotron {
+        background-size: contain; /* Baguhin ang background size */
+        height: auto; /* Palitan ang height sa auto para sa natural na taas ng laman */
+        padding-top: 20px; /* Bawasan ang padding sa taas */
+        padding-bottom: 20px; /* Bawasan ang padding sa ibaba */
+        margin: 10px; /* Bawasan ang margin */
+        text-align: center; /* I-center ang text */
+        align-items: center; /* I-center ang mga item */
+    }
+}
