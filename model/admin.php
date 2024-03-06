@@ -1,6 +1,6 @@
 <?php
     session_start();
-    $conn = mysqli_connect("173.252.167.200:3306", "pawsandw_root_capstone", "capstone_rootPass", "pawsandw_capstone_db");
+    $conn = mysqli_connect("127.0.0.1:3306", "u977168850_root_capstone", "capstone24_rootPass", "u977168850_capstone_db");
     // IF
     if(isset($_POST["action"])){
         if($_POST["action"] == "login"){

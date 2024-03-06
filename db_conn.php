@@ -1,9 +1,9 @@
 <?php
     class Database {
-        private $host = '173.252.167.200:3306';
-        private $username = 'pawsandw_root_capstone';
-        private $password = 'capstone_rootPass';
-        private $database = 'pawsandw_capstone_db';
+        private $host = '127.0.0.1:3306';
+        private $username = 'u977168850_root_capstone';
+        private $password = 'capstone24_rootPass';
+        private $database = 'u977168850_capstone_db';
         private $connection;
 
         public function __construct() {
