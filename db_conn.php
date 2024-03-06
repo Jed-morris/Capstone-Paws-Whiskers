@@ -1,8 +1,8 @@
 <?php
     class Database {
         private $host = '173.252.167.200:3306';
-        private $username = 'pawsandw_jed';
-        private $password = '#bo=b)SpkjN$';
+        private $username = 'pawsandw_root_capstone';
+        private $password = 'capstone_rootPass';
         private $database = 'pawsandw_capstone_db';
         private $connection;
 
