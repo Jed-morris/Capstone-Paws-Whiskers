@@ -4,25 +4,32 @@
     <style>
 /* Container styles */
 .container {
-    margin-top: 50px;
+    margin-top: 20px; /* Adjust as needed */
+    padding: 20px;
+    background-color: #f9f9f9; /* Light gray background */
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Shadow for container */
 }
 
 /* Section headings */
 h2, h3 {
     color: #333;
     font-weight: bold;
+    margin-bottom: 10px;
 }
 
 /* Introduction paragraph */
 p {
-    color: #666;
+    color: #444;
     line-height: 1.6;
+    margin-bottom: 20px;
 }
 
 /* Team members list */
 ul {
     list-style-type: none;
     padding-left: 0;
+    margin-bottom: 20px;
 }
 
 /* Team member names */
@@ -33,17 +40,20 @@ strong {
 /* Values list */
 ul {
     margin-top: 10px;
+    margin-bottom: 20px;
 }
 
 /* Pet care tips list */
 ul {
     margin-top: 10px;
+    margin-bottom: 20px;
 }
 
 /* Testimonials blockquote */
 blockquote {
     font-style: italic;
-    color: #888;
+    color: #777;
+    margin-bottom: 20px;
 }
 
 /* Testimonials cite */
@@ -51,6 +61,7 @@ cite {
     display: block;
     text-align: right;
     color: #555;
+    margin-bottom: 20px;
 }
 
 /* Contact information */
@@ -62,7 +73,8 @@ p {
 @media (max-width: 768px) {
     /* Adjustments for smaller screens */
     .container {
-        margin-top: 30px;
+        margin-top: 10px;
+        padding: 10px;
     }
 
     h2, h3 {
@@ -80,7 +92,7 @@ p {
     cite {
         font-size: 12px;
     }
-}       
+}
     </style>
 
     <main>
