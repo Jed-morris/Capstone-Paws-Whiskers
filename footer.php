@@ -16,7 +16,7 @@
                 </div>
                 <div class="col-md-4">
                     <h3>Quick Links</h3>
-                    <a href="#" class="links">About us</a>
+                    <a href="about_us.php" class="links">About us</a>
                 </div>
             </div>
             <div class="row">
