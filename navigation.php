@@ -1,4 +1,3 @@
-<body class="bg-body-tertiary">
 <header class="h-auto">
     <nav class="navbar navbar-expand-md fixed-top">
         <div class="container">
