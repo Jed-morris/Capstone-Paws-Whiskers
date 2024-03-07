@@ -282,49 +282,26 @@ main {
     margin-bottom: 10px;
 }
 
-.slider .shopping-cart {
-    position: absolute;
-    display: none;
-    top: 60px;
-    right: -50%;
-    padding: 1rem;
-    border-radius: .5rem;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    width: 30rem;
-    background: steelblue;
+/*Shopping Start*/
+.slider {
+    background-color: steelblue;
+    position: relative;
+    top: 3em;
+    width: 0;
+    height: 100%;
+    float: right;
 }
-
-.slider .shopping-cart.active {
-    display: block;
-    right: 0;
-    transition: .4s linear;
-}
-
-.slider .shopping-cart .item-box {
+  
+.item-box {
+    grid-template-columns: 100px repeat(3, 1fr);
+    padding: 20px;
     display: grid;
-    grid-template-columns: 50px 150px 1fr auto;
-    gap: 0;
-    text-align: center;
-    align-items: center;
+    color: #fff;
+    row-gap: 10px;
 }
 
-.slider .shopping-cart .item-box .quantity span {
-    display: inline-block;
-    width: 25px;
-    height: 25px;
-    background-color: white;
-    color: #555;
-    border-radius: 50%;
-    cursor: pointer;
-}
-
-.slider .shopping-cart .item-box .quantity span:nth-child(2) {
-    background-color: transparent;
-    color: #eee;
-}
-
-.slider .shopping-cart .item-box:nth-child(even) {
-    background-color: lightblue;
+.item-box:nth-child(odd) {
+    background-color: cadetblue;
 }
 
 /* Footer styles */
