@@ -1,18 +1,19 @@
 let searchForm = document.querySelector('.search-form');
 
-let listCart = document.querySelector('.shopping-cart');
 
-document.querySelector('#cart-btn').onclick = () =>{
-    const i = document.getElementById("slider");
-    if (i.style.width === "40%") {
-        i.style.width="0";
-    } else {
-        i.style.width="40%";
-    }
+
+let shoppingCart = document.querySelector('.shopping-cart');
+
+
+
+window.onscroll = () =>{
+    //searchForm.classList.remove('active');
+    //shoppingCart.classList.remove('active');
+    //loginForm.classList.remove('active');
+    //navbar.classList.remove('active');
 }
 
 const alertPlaceholder = document.getElementById('liveAlertPlaceholder');
-
 const appendAlert = (message, type) => {
     const wrapper = document.createElement('div');
     wrapper.innerHTML = [
@@ -35,7 +36,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 	var length = document.getElementById("length");
 	var matchAlert = document.getElementById("matchAlert");
-	//var dupAlert = document.getElementById("dupAlert");
+	var dupAlert = document.getElementById("dupAlert");
 
     var f = document.forms["regForm"].elements;
 
@@ -122,20 +123,14 @@ document.addEventListener('DOMContentLoaded', function () {
     let iconCartSpan = document.querySelector('.nav-icons span');
 
     let carts = [];
-    let listItems = [];
     loadStocks();
     // Function to view products in Homepage
     function loadStocks() {
         $.ajax({
             type: 'GET',
-            url: '././model/load_available_stocks.php',
+            url: '././model/dry_dogfood.php',
             success: function (response) {
                 var stocks = JSON.parse(response);
-                listItems = stocks;
-                if (localStorage.getItem('cart')) {
-                    carts = JSON.parse(localStorage.getItem('cart'));
-                    addCartToView();
-                }
                 var rows = '';
                 stocks.forEach(function (stock) {
                     rows += '<div class="card m-2">';
@@ -147,7 +142,64 @@ document.addEventListener('DOMContentLoaded', function () {
                     rows += '</div>';
                     rows += '</div>';
                 });
-                $('#products').html(rows);
+                $('#dry_dogfood').html(rows);
+            }
+        });
+        $.ajax({
+            type: 'GET',
+            url: '././model/wet_dogfood.php',
+            success: function (response) {
+                var stocks = JSON.parse(response);
+                var rows = '';
+                stocks.forEach(function (stock) {
+                    rows += '<div class="card m-2">';
+                    rows += '<img class="card-img-top" src="./img/' + stock.image_dir + '"/>';
+                    rows += '<div class="card-body">';
+                    rows += '<b>' + stock.name + '</b>';
+                    rows += '<p>Php '+ stock.sales_price +'.00</p>';
+                    rows += '<button class="btn btn-primary addCart" data-id="' + stock.id + '">Add to cart</button>';
+                    rows += '</div>';
+                    rows += '</div>';
+                });
+                $('#wet_dogfood').html(rows);
+            }
+        });
+        $.ajax({
+            type: 'GET',
+            url: '././model/dry_catfood.php',
+            success: function (response) {
+                var stocks = JSON.parse(response);
+                var rows = '';
+                stocks.forEach(function (stock) {
+                    rows += '<div class="card m-2">';
+                    rows += '<img class="card-img-top" src="./img/' + stock.image_dir + '"/>';
+                    rows += '<div class="card-body">';
+                    rows += '<b>' + stock.name + '</b>';
+                    rows += '<p>Php '+ stock.sales_price +'.00</p>';
+                    rows += '<button class="btn btn-primary addCart" data-id="' + stock.id + '">Add to cart</button>';
+                    rows += '</div>';
+                    rows += '</div>';
+                });
+                $('#dry_catfood').html(rows);
+            }
+        });
+        $.ajax({
+            type: 'GET',
+            url: '././model/wet_catfood.php',
+            success: function (response) {
+                var stocks = JSON.parse(response);
+                var rows = '';
+                stocks.forEach(function (stock) {
+                    rows += '<div class="card m-2">';
+                    rows += '<img class="card-img-top" src="./img/' + stock.image_dir + '"/>';
+                    rows += '<div class="card-body">';
+                    rows += '<b>' + stock.name + '</b>';
+                    rows += '<p>Php '+ stock.sales_price +'.00</p>';
+                    rows += '<button class="btn btn-primary addCart" data-id="' + stock.id + '">Add to cart</button>';
+                    rows += '</div>';
+                    rows += '</div>';
+                });
+                $('#wet_catfood').html(rows);
             }
         });
     }
@@ -156,8 +208,8 @@ document.addEventListener('DOMContentLoaded', function () {
         e.preventDefault();
         let positionClick = e.target;
         if (positionClick.classList.contains('addCart')) {
-            let id = $(this).data('id');
-            let itemCart = carts.findIndex((value) => value.id == id);
+            var id = $(this).data('id');
+            let itemCart = carts.findIndex((value) => value.id = id);
             if (carts.length <= 0) {
                 carts = [{
                     id: id,
@@ -165,89 +217,25 @@ document.addEventListener('DOMContentLoaded', function () {
                 }]
             }else if (itemCart < 0) {
                 carts.push({
-                    id: id,
+                    id:id,
                     qty: 1
                 })
             }else {
                 carts[itemCart].qty = carts[itemCart].qty + 1;
             }
             addCartToView();
-            localStorage.setItem('cart', JSON.stringify(carts));
         }
     });
 
     const addCartToView = () => {
-        listCart.innerHTML = '';
         let totalQty = 0;
         if (carts.length > 0) {
             carts.forEach(cart => {
                 totalQty = totalQty + cart.qty;
-                let newCart = document.createElement('div');
-                newCart.classList.add('item-box');
-                newCart.dataset.id = cart.id;
-                let positionItems = listItems.findIndex((value) => value.id == cart.id);
-                let info = listItems[positionItems];
-                newCart.innerHTML = `
-                <div class="image mb-2">
-                    <img class="img-thumbnail" src="./img/${info.image_dir}" alt="">
-                </div>
-                <div class="name">
-                    <h6>${info.name}</h6>
-                </div>
-                <div class="totalPrice">
-                    <span class="totalPrice">${info.sales_price * cart.qty}</span>
-                </div>
-                <div class="quantity">
-                    <span class="minus"><</span>
-                    <span>${cart.qty}</span>
-                    <span class="plus">></span>
-                </div>
-                `;
-                listCart.appendChild(newCart);
             })
-        }else {
-            console.log("hello");
-            let newCart = document.createElement('div');
-            newCart.classList.add('item-box');
-            newCart.innerHTML = 'Hello, you do not have items in your cart!';
         }
         iconCartSpan.innerText = totalQty;
     }
-
-    listCart.addEventListener('click', (e) => {
-        let positionClick = e.target;
-        if (positionClick.classList.contains('minus') || positionClick.classList.contains('plus')) {
-            let id = positionClick.parentElement.parentElement.dataset.id;
-            let type = 'minus';
-            if(positionClick.classList.contains('plus')){
-                type = 'plus';
-            }
-            changeQty(id, type);
-        }
-    })
-
-    const changeQty = (id, type) => {
-        let positionItemCart = carts.findIndex((value) => value.id == id);
-        if (positionItemCart >=0) {
-            switch (type) {
-                case 'plus':
-                    let x = carts[positionItemCart].qty = carts[positionItemCart].qty + 1;
-                    console.log(x);
-                    break;
-                default:
-                    let changeValue = carts[positionItemCart].qty - 1;
-                    if (changeValue > 0) {
-                        carts[positionItemCart].qty = changeValue;
-                    } else {
-                        carts.splice(positionItemCart, 1);
-                    }
-                    break;
-            }
-        }
-        localStorage.setItem('cart', JSON.stringify(carts));
-        addCartToView();
-    }
-
 
     // Add signup form submit
     $('#signupForm').submit(function (e) {
@@ -288,6 +276,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     appendAlert(response,'danger');
                 } else {
                     window.location.reload();
+                    console.log(response);
                 }
             },
             error: function(xhr, status, error) {
