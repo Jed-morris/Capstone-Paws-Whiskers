@@ -1,41 +1,41 @@
 <?php include('header.php')?>
 
     <main>
-        <div class="container-fluid pb-4">
-        <!-- Carousel -->
-        <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="container-fluid pb-4">
+    <!-- Carousel -->
+    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
 
-        <!-- Indicator/dots  -->
-        <div class="carousel-indicators">
-        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></button>
-        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1"></button>
-        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2"></button>
-        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="3"></button>
-        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="4"></button>
-        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="5"></button>
-        </div>
+    <!-- Indicator/dots  -->
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="3"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="4"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="5"></button>
+    </div>
 
     <!--The slideshow/carousel -->
-    <div class="carousel-inner">
+      <div class="carousel-inner">
         <div class="carousel-item active">
-            <img src="img/dogs1.1.jpg" alt="dog1" class="d-block" style="width: 100%;">
-        </div>
-        <div class="carousel-item">
+          <img src="img/dogs1.1.jpg" alt="dog1" class="d-block" style="width: 100%;">
+          </div>
+          <div class="carousel-item">
             <img src="img/cats1.1.jpg" alt="cat1" class="d-block" style="width: 100%;">
-        </div>
-        <div class="carousel-item">
+          </div>
+          <div class="carousel-item">
             <img src="img/dogs1.2.jpg" alt="dog2" class="d-block" style="width: 100%;">
-        </div>
-        <div class="carousel-item">
+          </div>
+          <div class="carousel-item">
             <img src="img/cats1.2.jpg" alt="cat2" class="d-block" style="width: 100%;">
-        </div>
-        <div class="carousel-item">
+          </div>
+          <div class="carousel-item">
             <img src="img/dogs1.3.jpg" alt="dog3" class="d-block" style="width: 100%;">
-        </div>
-        <div class="carousel-item">
+          </div>
+          <div class="carousel-item">
             <img src="img/cats1.3.jpg" alt="cat3" class="d-block" style="width: 100%;">
-        </div>   
-    </div>
+          </div>   
+      </div>
 
     <!-- Left and right controls/icons -->
 <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
@@ -123,12 +123,5 @@
     </div>
 </div>
 </main>
-<div class="slider" id="slider">
-    <div class="shopping-cart">
-    </div>
-    <div class="btn-box">
-        <button class="btn btn-success">Place Order</button>
-    </div>
-</div>
 
 <?php include('footer.php')?>
