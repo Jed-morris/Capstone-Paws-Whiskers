@@ -10,14 +10,6 @@
         </div>
     </div>
 
-    <div class="slider" id="slider">
-        <div class="shopping-cart">
-        </div>
-        <div class="btn-box">
-            <button class="btn btn-success">Place Order</button>
-        </div>
-    </div>
-
     <section class="card-container" id="dry_dogfood"></section>
 
     <!----Login Form---->
