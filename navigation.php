@@ -12,10 +12,10 @@
                         <a class="nav-link text-light" href="index.php">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-light" href="dry_dog_food.php" onclick="openItems('dry_dogfood')">Dry Dog Food</a>
+                        <a class="nav-link text-light" href="dry_dog_food.php" onclick="openItems('dry_dogfood', 'this', 'dry_dogfood')">Dry Dog Food</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-light" href="wet_dog_food.php" onclick="openItems('wet_dogfood')">Wet Dog Food</a>
+                        <a class="nav-link text-light" href="wet_dog_food.php" onclick="openItems('wet_dogfood', 'this', 'wet_dogfood')">Wet Dog Food</a>
                     </li>
                 </ul>
             <div class="nav-icons text-light">
