@@ -1,12 +1,6 @@
 <?php
 session_start();
 
-if (isset($_SESSION['ID'])) {
-    // Redirect to user dashboard if already logged in
-    header("Location: user_dashboard.php");
-    exit;
-}
-
 if (isset($_POST['uname']) && isset($_POST['pass'])) {
     include "db_conn.php";
     $uname = $_POST['uname'];
@@ -43,5 +37,4 @@ if (isset($_POST['uname']) && isset($_POST['pass'])) {
     exit;
 }
 
-// Display login form here
 ?>
