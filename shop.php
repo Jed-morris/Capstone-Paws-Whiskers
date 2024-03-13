@@ -58,6 +58,7 @@
           <img src="img/PEDIGREE® Country Stew 430g.png" class="card-img-top" alt="wetdog_food">
         </div>
       </div>
+  </div>
 </section>
 
 
