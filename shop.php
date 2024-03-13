@@ -33,8 +33,7 @@
                         </li>
                     </ul>
                     <div class="nav-icons text-light">
-                        <div class="fas fa-shopping-cart ms-3" id="cart-btn"></div>
-                        <span>0</span>
+                        <a href="#shopping-cart" style="color: mediumblue;">  <i style="margin-right: 1%;" class="fa-solid fa-cart-shopping justify-content-end fa-xl" ></i></a>
                         <div class="text-end">
                             <a href="login.php"><button class="bn14">Log In</button></a>
                         </div>
