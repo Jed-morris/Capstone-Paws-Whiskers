@@ -27,10 +27,8 @@ else{
         button.addEventListener('click',addToCartClicked)
     }
 
-    var purchaseButton = document.getElementsByClassName('btn-purchase')[0];
-    if (purchaseButton) {
-        purchaseButton.addEventListener('click', purchaseClicked);
-    }
+    document.getElementsByClassName('btn-purchase')[0].addEventListener('click', purchaseClicked)
+ }
 
 
  function purchaseClicked(){
@@ -72,9 +70,7 @@ function addItemToCart(title, price, imageSrc){
     var cartRow = document.createElement('tr');
     cartRow.classList.add('cart-row');
     var cartItems = document.getElementsByClassName('cart-items')[0];
-    if (cartItems) {
-        // Ito ay mayroong laman, maaari mo nang gamitin ang cartItems.getElementsByClassName('cart-item-title')
-    }
+    var cartItemNames = cartItems.getElementsByClassName('cart-item-title');
 
     for (i = 0; i< cartItemNames.length ; i++){
         if(cartItemNames[i].innerText == title){
@@ -113,12 +109,12 @@ function updateCartTotal(){
         var cartRow =cartRows[i];
         var priceElement = cartRow.getElementsByClassName('cart-price')[0];
         var quantityElement = cartRow.getElementsByClassName('cart-quantity-input')[0];
-        var price = parseFloat(priceElement.innerText.replace('Php ' , ''))
+        var price = parseFloat(priceElement.innerText.replace('Rs ' , ''))
         var quantity = quantityElement.value;
         total = total + (price * quantity);
          
     }
     total = Math.round(total * 100 )/100;
-    document.getElementsByClassName('cart-total-price')[0].innerText = 'Php '+ total + '.00';
-    }
+    document.getElementsByClassName('cart-total-price')[0].innerText = 'Rs '+ total + '.00';
+ 
 }
