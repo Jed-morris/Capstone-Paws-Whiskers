@@ -32,7 +32,6 @@
                         </li>
                     </ul>
                     <div class="nav-icons text-light">
-                        <div class="fas fa-search ms-3" id="search-btn"></div>
                         <div class="fas fa-shopping-cart ms-3" id="cart-btn"></div>
                         <span>0</span>
                         <div class="text-end">
@@ -142,7 +141,7 @@
                         <div class="card-body">
                             <h5 class="card-title">Vitality- Value Meal Puppy</h5>
                             <p class="card-text">Bestsellers for Dry Dog Food</p>
-                            <a href="dry_dog_food.php" class="btn btn-primary">Buy Now</a>
+                            <a href="shop.php" class="btn btn-primary">Buy Now</a>
                         </div>
                     </div>
                 </div>
@@ -154,7 +153,7 @@
                         <div class="card-body">
                             <h5 class="card-title">Pedigree- Country Stew</h5>
                             <p class="card-text">Bestsellers of Wet Dog Food</p>
-                            <a href="wet_dog_food.php" class="btn btn-primary">Buy Now</a>
+                            <a href="shop.php" class="btn btn-primary">Buy Now</a>
                         </div>
                     </div>
                 </div>

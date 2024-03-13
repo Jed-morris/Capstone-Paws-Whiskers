@@ -113,7 +113,6 @@ p {
                         </li>
                     </ul>
                     <div class="nav-icons text-light">
-                        <div class="fas fa-search ms-3" id="search-btn"></div>
                         <div class="fas fa-shopping-cart ms-3" id="cart-btn"></div>
                         <span>0</span>
                         <div class="text-end">
