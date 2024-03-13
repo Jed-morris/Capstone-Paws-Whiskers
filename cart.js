@@ -32,6 +32,7 @@ else{
         purchaseButton.addEventListener('click', purchaseClicked);
     }
 
+
  function purchaseClicked(){
      alert('Thank you for your purchase!!!');
      var cartItems = document.getElementsByClassName('cart-items')[0];
@@ -70,7 +71,6 @@ function addToCartClicked(event){
 function addItemToCart(title, price, imageSrc){
     var cartRow = document.createElement('tr');
     cartRow.classList.add('cart-row');
-    var cartItems = document.getElementsByClassName('cart-items')[0];
     var cartItems = document.getElementsByClassName('cart-items')[0];
     if (cartItems) {
         // Ito ay mayroong laman, maaari mo nang gamitin ang cartItems.getElementsByClassName('cart-item-title')
