@@ -70,7 +70,7 @@
  
 
     <div class="btn-purchase" style="margin-top: 10%;">
-      <button type="button"  class="btn btn-dark btn-purchase "><i class="fa-solid fa-cart-shopping " style="margin-right: 6%;"></i>PURCHASE</button>
+      <button type="button"  class="btn btn-success btn-purchase "><i class="fa-solid fa-cart-shopping " style="margin-right: 6%;"></i>PURCHASE</button>
     </div>
 
 </section>
