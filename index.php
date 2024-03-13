@@ -138,7 +138,7 @@
                     <h2>Dry Dog Food</h2>
                     <p>Check out our selection of high-quality dry dog foods!</p>
                     <div class="card-product mx-3">
-                        <img src="img/IMG-65d13d2b2d7808.69516260.png" class="card-img-top" alt="...">
+                        <img src="img/Vitality Valuemeal Puppy 1Kg.png" class="card-img-top" alt="dry_dogfood">
                         <div class="card-body">
                             <h5 class="card-title">Vitality- Value Meal Puppy</h5>
                             <p class="card-text">Bestsellers for Dry Dog Food</p>
@@ -150,7 +150,7 @@
                     <h2>Wet Dog Food</h2>
                     <p>Check out our selection of high-quality wet dog foods!</p>
                     <div class="card-product mx-3">
-                        <img src="img/IMG-65d21fd31cd234.71612192.png" class="card-img-top" alt="...">
+                        <img src="img/PEDIGREE® Country Stew 430g.png" class="card-img-top" alt="wet_dogfood">
                         <div class="card-body">
                             <h5 class="card-title">Pedigree- Country Stew</h5>
                             <p class="card-text">Bestsellers of Wet Dog Food</p>
