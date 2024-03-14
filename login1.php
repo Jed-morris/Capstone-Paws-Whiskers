@@ -22,7 +22,7 @@ if (isset($_POST['uname']) && isset($_POST['pass'])) {
             if (password_verify($pass, $user['password'])) {
                 $_SESSION['ID'] = $user['id'];
                 $_SESSION['Email'] = $user['email'];
-                header("Location: user_dashboard.php");
+                header("Location: index.php");
                 exit;
             } else {
                 $em = "Incorrect username or password";
