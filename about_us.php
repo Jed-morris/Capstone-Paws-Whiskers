@@ -120,7 +120,8 @@ p {
         </nav>
     </header>
 
-    <main>
+<main>
+    <div class="container-article">   
         <article class="container">
             <div class="row">
                 <div class="col-md-8">
@@ -192,13 +193,14 @@ p {
                 </div>
             </div>
         </article>     
-    </main>
+    </div>
+</main>
 
 <footer class="footer">
     <div class="container">
         <div class="row">
             <div class="col-md-4">
-                <h3>Paws and Whiskers</h3>
+                <h3 style="color: white;">Paws and Whiskers</h3>
                 <p>Supplies for your furr babies</p>
                 
                 <div class="share">
@@ -208,12 +210,12 @@ p {
             </div>
                 
             <div class="col-md-4">
-                <h3>Contact Info</h3>
+                <h3 style="color: white;">Contact Info</h3>
                     <a href="https://mail.google.com/" class="links text-light"> <i class="fas fa-envelope"></i></a>
                     <a href="https://maps.google.com/" class="links text-light"> <i class="fas fa-map-marker-alt"></i></a>
             </div>
                 <div class="col-md-4">
-                <h3>Quick Links</h3>
+                <h3 style="color: white;">Quick Links</h3>
                     <a href="about_us.php" class="links text-light">About us</a>
                 </div>
             </div>
