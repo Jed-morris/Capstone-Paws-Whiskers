@@ -12,6 +12,12 @@ main {
     overflow-y: auto;
 }
 
+/* Navbar styling */
+.navbar {
+    background-color: steelblue;
+    color: white;
+}
+
 .navbar-item:hover {
     color: lightseagreen;
 }
