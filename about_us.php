@@ -121,12 +121,12 @@ p {
     </header>
 
 <main>
-    <div class="container-article">   
-        <article class="container">
+    <div class="container">
+        <article>
             <div class="row">
                 <div class="col-md-8">
                     <h2>About Us</h2>
-                        <p>Welcome to Paws and Whiskers, your one-stop shop for all your pet's needs. Founded in [year], we are dedicated to providing top-quality products and exceptional service to our customers and their furry friends.</p>
+                    <p>Welcome to Paws and Whiskers, your one-stop shop for all your pet's needs. Founded in 2023, we are dedicated to providing top-quality products and exceptional service to our customers and their furry friends.</p>
                 </div>
             </div>
         </article>
@@ -176,7 +176,7 @@ p {
             <div class="row">
                 <div class="col-md-8">
                     <h3>What Our Customers Say</h3>
-                    <blockquote>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis hendrerit diam, vel tincidunt velit."</blockquote>
+                    <blockquote>"Working with Paws and Whiskers has been an amazing experience! Their dedication to providing top-quality products and exceptional service truly sets them apart."</blockquote>
                     <cite>- Neo Smith, Happy Pet Owner</cite>
                 </div>
             </div>
