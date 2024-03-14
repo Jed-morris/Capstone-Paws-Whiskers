@@ -25,7 +25,7 @@
                             <a class="nav-link text-light" href="./">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-light" href="/shop">Shop</a>
+                            <a class="nav-link text-light" href="shop.php">Shop</a>
                         </li>
                     </ul>
                     <div class="nav-icons text-light">
@@ -174,12 +174,12 @@
                 
             <div class="col-md-4">
                 <h3>Contact Info</h3>
-                    <a href="https://mail.google.com/" class="links"> <i class="fas fa-envelope"></i></a>
-                    <a href="https://maps.google.com/" class="links"> <i class="fas fa-map-marker-alt"></i></a>
+                    <a href="https://mail.google.com/" class="links text-light"> <i class="fas fa-envelope"></i></a>
+                    <a href="https://maps.google.com/" class="links text-light"> <i class="fas fa-map-marker-alt"></i></a>
             </div>
                 <div class="col-md-4">
                 <h3>Quick Links</h3>
-                    <a href="about_us.php" class="links">About us</a>
+                    <a href="about_us.php" class="links text-light">About us</a>
                 </div>
             </div>
         <div class="row">
