@@ -96,21 +96,21 @@ p {
     <header class="h-auto">
         <nav class="navbar navbar-expand-md fixed-top">
             <div class="container">
-                <a class="navbar-brand text-light" href="index.php"><i class="fas fa-paw"></i> Paws and Whiskers <i class="fas fa-cat"></i></a>
+                <a class="navbar-brand text-light" href="./"><i class="fas fa-paw"></i> Paws and Whiskers <i class="fas fa-cat"></i></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav me-auto">
                         <li class="nav-item">
-                            <a class="nav-link text-light" href="index.php">Home</a>
+                            <a class="nav-link text-light" href="./">Home</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-light" href="shop.php">Shop</a>
                         </li>
                     </ul>
                     <div class="nav-icons text-light">
-                        <a href="#shopping-cart" style="color: mediumblue;">  <i style="margin-right: 1%;" class="fa-solid fa-cart-shopping justify-content-end fa-xl" ></i></a>
+                        <a href="shop.php" style="color: mediumblue;">  <i style="margin-right: 1%;" class="fa-solid fa-cart-shopping justify-content-end fa-xl" ></i></a>
                         <div class="text-end">
                             <a href="login.php"><button class="bn14">Log In</button></a>
                         </div>
