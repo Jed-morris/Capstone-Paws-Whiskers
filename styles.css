@@ -18,6 +18,24 @@ main {
     color: white;
 }
 
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar-nav .nav-item {
+    margin-right: 15px;
+}
+
+.navbar-nav .nav-item.active .nav-link {
+    color: #ffffff !important; /* Kulay ng teksto */
+    background-color: #007bff !important; /* Kulay ng background */
+}
+
+.navbar-nav .nav-link {
+    font-size: 1rem;
+    font-weight: bold;
+}
 .navbar-item:hover {
     color: lightseagreen;
 }
