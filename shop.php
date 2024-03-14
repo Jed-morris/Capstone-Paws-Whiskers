@@ -28,12 +28,9 @@
                         <li class="nav-item">
                             <a class="nav-link text-light" href="shop.php">Shop</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-light" href="cart.php">Cart</a>
-                        </li>
                     </ul>
                     <div class="nav-icons text-light">
-                        <a href="cart.php" style="color: mediumblue;">  <i style="margin-right: 1%;" class="fa-solid fa-cart-shopping justify-content-end fa-xl" ></i></a>
+                        <a href="#shopping-cart" style="color: mediumblue;">  <i style="margin-right: 1%;" class="fa-solid fa-cart-shopping justify-content-end fa-xl" ></i></a>
                         <div class="text-end">
                             <a href="login.php"><button class="bn14">Log In</button></a>
                         </div>
@@ -159,7 +156,39 @@
   </div>
 </section>
 
-    <footer class="footer">
+<!--Shopping Cart-->
+<section class="container content-section" id="shopping-cart">
+  
+  <h3 style="text-decoration: underline;text-align: center; margin-bottom: 7%;">Shopping Cart</h3>
+ 
+ <table class="table table-hover table-cart">
+  <thead>
+    <tr>
+      <th>Item</th>
+      <th>Price</th>
+      <th>Quantity</th>
+    </tr>
+  </thead>
+  <tbody class="cart-items">
+    
+     
+  </tbody>
+</table>
+
+    <div class="cart-total"> 
+      <strong class="cart-total-title">Total</strong>
+      <span  class="cart-total-price" style="text-align: right;">$0</span>
+    </div>
+ 
+
+    <div class="btn-purchase" style="margin-top: 10%;">
+      <button type="button"  class="btn btn-success btn-purchase "><i class="fa-solid fa-cart-shopping " style="margin-right: 6%;"></i>PURCHASE</button>
+    </div>
+
+</section>
+
+<!--Footer-->
+  <footer class="footer">
     <div class="container">
         <div class="row">
             <div class="col-md-4">
@@ -194,7 +223,7 @@
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
 <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 
-<script src="cart.js"></script>
+<script src="script.js"></script>
 
 </body>
 </html>

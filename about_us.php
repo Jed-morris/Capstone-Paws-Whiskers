@@ -108,9 +108,6 @@ p {
                         <li class="nav-item">
                             <a class="nav-link text-light" href="shop.php">Shop</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-light" href="cart.php">Cart</a>
-                        </li>
                     </ul>
                     <div class="nav-icons text-light">
                         <a href="cart.php" style="color: mediumblue;">  <i style="margin-right: 1%;" class="fa-solid fa-cart-shopping justify-content-end fa-xl" ></i></a>

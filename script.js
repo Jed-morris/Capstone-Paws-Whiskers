@@ -27,7 +27,7 @@ else{
         button.addEventListener('click',addToCartClicked)
     }
 
-    document.getElementsByClassName('btn-purchase')[0].addEventListener('click', purchaseClicked);
+    document.getElementsByClassName('btn-purchase')[0].addEventListener('click', purchaseClicked)
  }
 
 
@@ -62,7 +62,7 @@ function addToCartClicked(event){
     var title = shopItem.getElementsByClassName('shop-item-title')[0].innerText;
     var price = shopItem.getElementsByClassName('shop-item-price')[0].innerText;
     var imageSrc = shopItem.getElementsByClassName('shop-item-image')[0].src;
-    addItemToCart(title, price, imageSrc);
+    addItemToCart(title,price,imageSrc);
     updateCartTotal();
 }
 
@@ -109,12 +109,12 @@ function updateCartTotal(){
         var cartRow =cartRows[i];
         var priceElement = cartRow.getElementsByClassName('cart-price')[0];
         var quantityElement = cartRow.getElementsByClassName('cart-quantity-input')[0];
-        var price = parseFloat(priceElement.innerText.replace('Php ' , ''))
+        var price = parseFloat(priceElement.innerText.replace('Rs ' , ''))
         var quantity = quantityElement.value;
         total = total + (price * quantity);
          
     }
     total = Math.round(total * 100 )/100;
-    document.getElementsByClassName('cart-total-price')[0].innerText = 'Php '+ total + '.00';
+    document.getElementsByClassName('cart-total-price')[0].innerText = 'Rs '+ total + '.00';
  
 }
