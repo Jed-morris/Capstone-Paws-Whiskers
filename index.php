@@ -25,7 +25,7 @@
                             <a class="nav-link text-light" href="./">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-light" href=".shop">Shop</a>
+                            <a class="nav-link text-light" href="/shop">Shop</a>
                         </li>
                     </ul>
                     <div class="nav-icons text-light">
