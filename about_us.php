@@ -12,7 +12,8 @@
     <style>
 /* Container styles */
 .container {
-    margin-top: 50px;
+    margin-top: 150px;
+    padding-top: 50px;
 }
 
 /* Section headings */

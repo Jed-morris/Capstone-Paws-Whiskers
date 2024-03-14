@@ -12,33 +12,8 @@ main {
     overflow-y: auto;
 }
 
-/* Navbar styling */
-.navbar {
-    background-color: steelblue;
-    color: white;
-}
-
-.navbar-brand {
-    font-size: 1.5rem;
-    font-weight: bold;
-}
-
-.navbar-nav .nav-item {
-    margin-right: 15px;
-}
-
-.navbar-nav .nav-item.active .nav-link {
-    color: #ffffff !important; /* Kulay ng teksto */
-    background-color: #007bff !important; /* Kulay ng background */
-}
-
-.navbar-nav .nav-link {
-    font-size: 1rem;
-    font-weight: bold;
-}
-
-.navbar-nav .nav-link:hover {
-    color: orange;
+.navbar-item:hover {
+    color: lightseagreen;
 }
 
 .nav-icons {
@@ -54,62 +29,6 @@ main {
 .nav-icons span {
     margin-left: 5px;
     margin-right: 10px;
-    font-weight: bold;
-}
-
-/* Search bar styling (assuming it's a separate element) */
-#search-bar {
-    display: none; /* Hide the search bar by default */
-    position: absolute;
-    top: 60px;
-    right: 0;
-    padding: 10px;
-    width: 200px;
-    background-color: white;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-#search-bar input[type="text"] {
-    width: 100%;
-    padding: 5px;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-}
-
-/* Cart styling (assuming it's a separate element) */
-#cart {
-    display: none; /* Hide the cart by default */
-    position: absolute;
-    top: 60px;
-    right: 0;
-    padding: 10px;
-    width: 200px;
-    background-color: white;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-#cart .item {
-    display: flex;
-    align-items: center;
-    margin-bottom: 5px;
-}
-
-#cart .item img {
-    width: 50px;
-    height: 50px;
-    object-fit: cover;
-    margin-right: 10px;
-}
-
-#cart .item p {
-    margin: 0;
-    font-size: 0.9rem;
-}
-
-#cart .item .quantity {
-    margin-left: auto;
     font-weight: bold;
 }
 
@@ -359,51 +278,6 @@ main {
     margin-bottom: 10px;
 }
 
-.slider .shopping-cart {
-    position: absolute;
-    display: none;
-    top: 60px;
-    right: -50%;
-    padding: 1rem;
-    border-radius: .5rem;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    width: 30rem;
-    background: steelblue;
-}
-
-.slider .shopping-cart.active {
-    display: block;
-    right: 0;
-    transition: .4s linear;
-}
-
-.slider .shopping-cart .item-box {
-    display: grid;
-    grid-template-columns: 50px 150px 1fr auto;
-    gap: 0;
-    text-align: center;
-    align-items: center;
-}
-
-.slider .shopping-cart .item-box .quantity span {
-    display: inline-block;
-    width: 25px;
-    height: 25px;
-    background-color: white;
-    color: #555;
-    border-radius: 50%;
-    cursor: pointer;
-}
-
-.slider .shopping-cart .item-box .quantity span:nth-child(2) {
-    background-color: transparent;
-    color: #eee;
-}
-
-.slider .shopping-cart .item-box:nth-child(even) {
-    background-color: lightblue;
-}
-
 /* Footer styles */
 .footer {
     background-color: steelblue;
@@ -508,37 +382,6 @@ main {
         padding: 2rem 1rem; /* Bawasan ang padding sa jumbotron para magmukhang mas maayos sa mobile screen */
     }
 
-    /* Mobile screens for card-container */
-@media (max-width: 768px) {
-    .card-container {
-        display: none;
-    }
-    #dry_dogfood {
-        display: block;
-    }
-}
-
-@media (min-width: 769px) {
-    .card-container {
-        display: block;
-    }
-}
-
-    /* Mobile screens for card-container */
-@media (max-width: 768px) {
-    .card-container {
-        display: none;
-    }
-    #wet_dogfood {
-        display: block;
-    }
-}
-
-@media (min-width: 769px) {
-    .card-container {
-        display: block;
-    }
-}
 
     /* Card-Trivia at Card-Care */
     .card-trivia,
@@ -569,5 +412,17 @@ main {
         margin: 10px; /* Bawasan ang margin */
         text-align: center; /* I-center ang text */
         align-items: center; /* I-center ang mga item */
+    }
+}
+
+@media (max-width: 768px) {
+    #product-cards {
+        width: 50%;
+    }
+}
+
+@media (max-width: 576px) {
+    #product-cards {
+        width: 100%;
     }
 }
