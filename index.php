@@ -91,9 +91,9 @@
 
         <section class="jumbotron text-center">
             <div class="container">
-                <h1>Pawsome goods for your Furr Babies</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi.</p>
-                <a href="#" class="btn btn-primary">Know more</a>
+                <h1></h1>
+                <p></p>
+                <a href="about_us.php" class="btn btn-primary">Know more</a>
             </div>
         </section>
 
