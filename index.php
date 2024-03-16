@@ -100,8 +100,8 @@
             </div>
         </section>
 
-<section class="container-fluid" style="padding-top: 50px; padding-bottom: 50px;">
-    <div class="row">
+<section class="card-container-fluid" style="padding-top: 50px; padding-bottom: 50px;">
+    <div class="row card-row">
         <div class="col-md-6">
             <div class="card-trivia h-100">
                 <div class="card-body">

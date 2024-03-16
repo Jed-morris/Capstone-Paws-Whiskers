@@ -168,8 +168,8 @@ main {
     color: white; /* Set text color for the jumbotron */
 }
 
-/* Styling for the container */
-.container-fluid {
+/* Trivia cards */
+.card-container-fluid {
     background-color: #f8f9fa; /* Light gray background color */
     padding: 50px 0; /* Add some padding for spacing */
 }
@@ -180,8 +180,8 @@ main {
     border-radius: 10px; /* Rounded corners */
     margin-bottom: 20px; /* Add some space between cards */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
-    margin-left: 40px; /* Add margin to the left */
-    margin-right: 40px; /* Add margin to the right */
+    margin-left: 70px; /* Add margin to the left */
+    margin-right: 70px; /* Add margin to the right */
 }
 
 /* Ensure the cards have the same height */
@@ -203,7 +203,6 @@ main {
 .card-text {
     flex-grow: 1; /* Allow text to grow and fill the remaining space */
     font-size: 1rem; /* Regular font size for text */
-    justify-content: center;
 }
 
 .item-list {
@@ -353,11 +352,12 @@ main {
         display: flex; /* I-set ang display sa flex para maiayos ang pag-layout ng cards */
         flex-wrap: wrap; /* I-wrap ang mga cards sa paglipat sa bagong hilera kung hindi kasya */
         justify-content: space-between; /* I-space evenly ang mga cards sa loob ng kanilang container */
+        margin-bottom: 20px; /* Dagdagan ang space sa pagitan ng mga card */
     }
 
     /* I-adjust ang lapad ng bawat card base sa laki ng screen */
-    .product-card {
-        width: calc(50% - 10px); /* Ang 10px na pagitan ayon sa margin */
+    #product-cards .col {
+        flex: 0 0 calc(50% - 10px); /* Ang 10px na pagitan ayon sa margin */
         margin-bottom: 20px; /* Dagdagan ang space sa pagitan ng mga card */
     }
 }
@@ -372,7 +372,7 @@ main {
 
     .card-trivia,
     .card-care {
-        margin-bottom: 10px; /* Dagdagan ang space sa pagitan ng mga card */
+        margin-bottom: 30px; /* Dagdagan ang space sa pagitan ng mga card */
     }
 
     #product-cards {
@@ -386,19 +386,17 @@ main {
     }
 
     /* I-set ang lapad ng bawat card */
-    .product-card {
-        flex: 0 0 auto; /* I-set ang flex properties para hindi mag-expand ang mga cards */
-        width: calc(100% - 10px); /* Ang 10px na pagitan ayon sa margin */
+    #product-cards .col {
+        flex: 0 0 calc(100% - 10px); /* Ang 10px na pagitan ayon sa margin */
         margin-right: 10px; /* Dagdagan ang space sa kanan ng bawat card */
         scroll-snap-align: start; /* I-align ang mga card sa start ng scroll */
     }
 
     /* I-adjust ang margin ng huling card para hindi magkaroon ng extra space */
-    #product-cards .product-card:last-child {
+    #product-cards .col:last-child {
         margin-right: 0; /* Walang margin sa kanan ng huling card */
     }
 }
-
 
 /* Media query para sa pinakamaliit na screens */
 @media (max-width: 375px) {
@@ -408,7 +406,7 @@ main {
 
     .card-trivia,
     .card-care {
-        margin-bottom: 10px; /* Dagdagan ang space sa pagitan ng mga card */
+        margin-bottom: 50px; /* Dagdagan ang space sa pagitan ng mga card */
     }
 
     #product-cards {
@@ -422,15 +420,14 @@ main {
     }
 
     /* I-set ang lapad ng bawat card */
-    .product-card {
-        flex: 0 0 auto; /* I-set ang flex properties para hindi mag-expand ang mga cards */
-        width: calc(100% - 10px); /* Ang 10px na pagitan ayon sa margin */
+    #product-cards .col {
+        flex: 0 0 calc(100% - 10px); /* Ang 10px na pagitan ayon sa margin */
         margin-right: 10px; /* Dagdagan ang space sa kanan ng bawat card */
         scroll-snap-align: start; /* I-align ang mga card sa start ng scroll */
     }
 
     /* I-adjust ang margin ng huling card para hindi magkaroon ng extra space */
-    #product-cards .product-card:last-child {
+    #product-cards .col:last-child {
         margin-right: 0; /* Walang margin sa kanan ng huling card */
     }
 }
