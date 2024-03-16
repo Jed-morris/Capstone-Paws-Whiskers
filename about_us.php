@@ -103,16 +103,19 @@ p {
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav me-auto">
                         <li class="nav-item">
-                            <a class="nav-link text-light" href="./">Home</a>
+                          <a class="nav-link text-light" href="./">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-light" href="shop.php">Shop</a>
+                          <a class="nav-link text-light" href="shop.php">Shop</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link text-light" href="about_us.php">About Us</a>
                         </li>
                     </ul>
                     <div class="nav-icons text-light">
-                        <a href="shop.php" style="color: mediumblue;">  <i style="margin-right: 1%;" class="fa-solid fa-cart-shopping justify-content-end fa-xl" ></i></a>
+                        <a href="shop.php" style="color: mediumblue; margin-right: 5%;">  <i style="margin-right: 1%;" class="fa-solid fa-cart-shopping justify-content-end fa-xl" ></i></a>
                         <div class="text-end">
-                            <a href="login.php"><button class="bn14">Log In</button></a>
+                            <a href="login.php"><button class="bn14">Login</button></a>
                         </div>
                     </div>
                 </div>
@@ -234,6 +237,20 @@ p {
 <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 
 <script>
+    // Kunin ang lahat ng mga link sa navbar
+    var navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+
+    // Iterasyon sa bawat link
+    navLinks.forEach(function(navLink) {
+        // I-check kung ang URL ng link ay katulad ng kasalukuyang URL
+        if (navLink.href === window.location.href) {
+            // Kung oo, idagdag ang class "active"
+            navLink.parentNode.classList.add('active');
+        }
+    });
+</script>
+
+<script>
     // When the user scrolls down 20px from the top of the document, show the button
 window.onscroll = function() {scrollFunction()};
 
@@ -251,6 +268,8 @@ function topFunction() {
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
 </script>
+
+<script src="script.js"></script>
 
 </body>
 </html>

@@ -22,16 +22,19 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav me-auto">
                         <li class="nav-item">
-                            <a class="nav-link text-light" href="./">Home</a>
+                          <a class="nav-link text-light" href="./">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-light" href="shop.php">Shop</a>
+                          <a class="nav-link text-light" href="shop.php">Shop</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link text-light" href="about_us.php">About Us</a>
                         </li>
                     </ul>
                     <div class="nav-icons text-light">
-                        <a href="shop.php" style="color: mediumblue;">  <i style="margin-right: 1%;" class="fa-solid fa-cart-shopping justify-content-end fa-xl" ></i></a>
+                        <a href="shop.php" style="color: mediumblue; margin-right: 5%;">  <i style="margin-right: 1%;" class="fa-solid fa-cart-shopping justify-content-end fa-xl" ></i></a>
                         <div class="text-end">
-                            <a href="login.php"><button class="bn14">Log In</button></a>
+                            <a href="login.php"><button class="bn14">Login</button></a>
                         </div>
                     </div>
                 </div>
@@ -57,22 +60,22 @@
     <!--The slideshow/carousel -->
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="img/dogs1.1.jpg" alt="dog1" class="d-block" style="width: 100%;">
+          <img src="img2/dogs1.1.jpg" alt="dog1" class="d-block" style="width: 100%;">
           </div>
           <div class="carousel-item">
-            <img src="img/cats1.1.jpg" alt="cat1" class="d-block" style="width: 100%;">
+            <img src="img2/cats1.1.jpg" alt="cat1" class="d-block" style="width: 100%;">
           </div>
           <div class="carousel-item">
-            <img src="img/dogs1.2.jpg" alt="dog2" class="d-block" style="width: 100%;">
+            <img src="img2/dogs1.2.jpg" alt="dog2" class="d-block" style="width: 100%;">
           </div>
           <div class="carousel-item">
-            <img src="img/cats1.2.jpg" alt="cat2" class="d-block" style="width: 100%;">
+            <img src="img2/cats1.2.jpg" alt="cat2" class="d-block" style="width: 100%;">
           </div>
           <div class="carousel-item">
-            <img src="img/dogs1.3.jpg" alt="dog3" class="d-block" style="width: 100%;">
+            <img src="img2/dogs1.3.jpg" alt="dog3" class="d-block" style="width: 100%;">
           </div>
           <div class="carousel-item">
-            <img src="img/cats1.3.jpg" alt="cat3" class="d-block" style="width: 100%;">
+            <img src="img2/cats1.3.jpg" alt="cat3" class="d-block" style="width: 100%;">
           </div>   
       </div>
 
@@ -133,7 +136,7 @@
                     <h2>Dry Dog Food</h2>
                     <p>Check out our selection of high-quality dry dog foods!</p>
                     <div class="card-product mx-3">
-                        <img src="img/Vitality Valuemeal Puppy 1Kg.png" class="card-img-top" alt="dry_dogfood">
+                        <img src="img2/Vitality Valuemeal Puppy 1Kg.png" class="card-img-top" alt="dry_dogfood">
                         <div class="card-body">
                             <h5 class="card-title">Vitality- Value Meal Puppy</h5>
                             <p class="card-text">Bestsellers for Dry Dog Food</p>
@@ -145,7 +148,7 @@
                     <h2>Wet Dog Food</h2>
                     <p>Check out our selection of high-quality wet dog foods!</p>
                     <div class="card-product mx-3">
-                        <img src="img/PEDIGREE® Country Stew 430g.png" class="card-img-top" alt="wet_dogfood">
+                        <img src="img2/PEDIGREE® Country Stew 430g.png" class="card-img-top" alt="wet_dogfood">
                         <div class="card-body">
                             <h5 class="card-title">Pedigree- Country Stew</h5>
                             <p class="card-text">Bestsellers of Wet Dog Food</p>
@@ -218,6 +221,20 @@
             )();
     </script>
 
+    <script>X
+    // Kunin ang lahat ng mga link sa navbar
+    var navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+
+    // Iterasyon sa bawat link
+    navLinks.forEach(function(navLink) {
+        // I-check kung ang URL ng link ay katulad ng kasalukuyang URL
+        if (navLink.href === window.location.href) {
+            // Kung oo, idagdag ang class "active"
+            navLink.parentNode.classList.add('active');
+        }
+    });
+    </script>
+
 <script>
     // When the user scrolls down 20px from the top of the document, show the button
 window.onscroll = function() {scrollFunction()};
@@ -236,6 +253,8 @@ function topFunction() {
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
 </script>
+
+<script src="script.js"></script>
 
 </body>
 </html>

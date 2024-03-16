@@ -23,21 +23,14 @@ main {
     font-weight: bold;
 }
 
-.navbar-nav .nav-item {
-    margin-right: 15px;
-}
-
-.navbar-nav .nav-item.active .nav-link {
-    color: #ffffff !important; /* Kulay ng teksto */
-    background-color: #007bff !important; /* Kulay ng background */
-}
-
 .navbar-nav .nav-link {
     font-size: 1rem;
     font-weight: bold;
+    color: white;
 }
-.navbar-item:hover {
-    color: lightseagreen;
+
+.navbar-nav .nav-item.active .nav-link {
+    background-color: #007bff;
 }
 
 .nav-icons {
@@ -45,7 +38,7 @@ main {
     align-items: center;
 }
 
-.nav-icons .fas {
+.nav-icons .fa-solid {
     font-size: 1.25rem;
     cursor: pointer;
 }
@@ -57,85 +50,49 @@ main {
 }
 
 .bn14 {
-    display: inline-block;
-    padding: 0.65em 1.6em;
-    border: 3px solid #ffffff;
-    margin: 0 0.3em 0.3em 0;
-    border-radius: 0.12em;
-    box-sizing: border-box;
-    text-decoration: none;
-    font-family: "Roboto", sans-serif;
-    font-weight: 300;
-    color: #ffffff;
-    text-align: center;
-    transition: all 0.2s;
-    animation: bn13bouncy 3s infinite linear;
-    position: relative;
     background-color: #7c99ab;
-  }
-  
-  .bn14:hover {
-    background-color: white;
-    color: #91b4c8;
-  }
-  
-  @keyframes bn14bouncy {
-    0% {
-      top: 0em;
-    }
-    40% {
-      top: 0em;
-    }
-    43% {
-      top: -0.9em;
-    }
-    46% {
-      top: 0em;
-    }
-    48% {
-      top: -0.4em;
+    border: 2px solid mediumblue;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    padding: 10px 24px;
+    border-radius: 5px;
+    animation: bn14bouncy 2s infinite alternate;
+    transition: all 0.4s ease-in-out;
+}
+
+@keyframes bn14bouncy {
+    0%, 100% {
+        transform: scale(1);
     }
     50% {
-      top: 0em;
+        transform: scale(1.1);
     }
-    100% {
-      top: 0em;
-    }
-  }
-  .bn632-hover {
-    width: 160px;
-    font-size: 16px;
-    font-weight: 600;
-    color: #fff;
-    cursor: pointer;
-    margin: 20px;
-    height: 55px;
-    text-align: center;
-    border: none;
-    background-size: 300% 100%;
-    border-radius: 50px;
-    moz-transition: all 0.4s ease-in-out;
-    -o-transition: all 0.4s ease-in-out;
-    -webkit-transition: all 0.4s ease-in-out;
-    transition: all 0.4s ease-in-out;
-  }
-  
-  .bn632-hover:hover {
+}
+
+.bn14:hover {
+    background-color: #0056b3;
     background-position: 100% 0;
-    moz-transition: all 0.4s ease-in-out;
-    -o-transition: all 0.4s ease-in-out;
-    -webkit-transition: all 0.4s ease-in-out;
     transition: all 0.4s ease-in-out;
-  }
-  
-  .bn632-hover:focus {
+}
+
+.bn14:focus {
     outline: none;
-  }
-  
-  .bn632-hover.bn25 {
+}
+
+.bn14.bn25 {
     background-image: linear-gradient(to right, #4885ca, #6a87a6, #98afc2, #cccccc);
     box-shadow: 0 4px 15px 0 rgba(45, 54, 65, 0.75);
-  }  
+}
+
+.bn14-hover.bn25 {
+    background-image: linear-gradient(to right, #4885ca, #6a87a6, #98afc2, #cccccc);
+    box-shadow: 0 4px 15px 0 rgba(45, 54, 65, 0.75);
+}  
 
 /* Custom CSS for Carousel */
 .carousel-item {
@@ -249,20 +206,9 @@ main {
     justify-content: center;
 }
 
-
 .item-list {
     width: 100%;
     margin-top: 3rem;
-}
-
-
-/* Eto ung sa mga PRODUCTS */
-.card-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1rem;
-    margin-top: 35px; /* Add space at the top */
-    margin-bottom: 20px; /* Add space at the bottom */
 }
 
 .card-product {
@@ -381,47 +327,37 @@ main {
     background-color: #555;
   }
   
-@media (min-width: 768px) {
-    .card {
-        margin-bottom: 20px; /* Add margin between each card for medium screens and larger */
-    }
+/* Jumbotron */
+.jumbotron {
+    padding: 2rem 1rem; /* Bawasan ang padding sa jumbotron para magmukhang mas maayos sa mobile screen */
 }
 
-@media (max-width: 767.98px) {
-    .card {
-        margin-bottom: 10px; /* Adjust margin between each card for smaller screens */
-    }
-}
-
-/* Media query para sa screen sizes ng mobile */
-@media (max-width: 767px) {
-    /* Carousel */
-    .carousel-item img {
-        max-width: 100%; /* Gawing responsive ang mga larawan sa carousel */
-        height: auto;
-    }
-
-    /* Jumbotron */
-    .jumbotron {
-        padding: 2rem 1rem; /* Bawasan ang padding sa jumbotron para magmukhang mas maayos sa mobile screen */
-    }
-
-
-    /* Card-Trivia at Card-Care */
-    .card-trivia,
-    .card-care {
-        margin-bottom: 10px; /* Bawasan ang spacing sa pagitan ng dalawang card */
-    }
+/* Card-Trivia at Card-Care */
+.card-trivia,
+.card-care {
+    margin-bottom: 10px; /* Bawasan ang spacing sa pagitan ng dalawang card */
 }
 
 /* Media query para sa tablet screens */
 @media (max-width: 768px) {
     .jumbotron {
-        padding: 2rem 1rem; /* Palakihin ang padding */
+        padding: 2rem; /* Pagpalit sa padding para hindi masyadong malaki */
     }
 
     .card-trivia,
     .card-care {
+        margin-bottom: 20px; /* Dagdagan ang space sa pagitan ng mga card */
+    }
+
+    #product-cards {
+        display: flex; /* I-set ang display sa flex para maiayos ang pag-layout ng cards */
+        flex-wrap: wrap; /* I-wrap ang mga cards sa paglipat sa bagong hilera kung hindi kasya */
+        justify-content: space-between; /* I-space evenly ang mga cards sa loob ng kanilang container */
+    }
+
+    /* I-adjust ang lapad ng bawat card base sa laki ng screen */
+    .product-card {
+        width: calc(50% - 10px); /* Ang 10px na pagitan ayon sa margin */
         margin-bottom: 20px; /* Dagdagan ang space sa pagitan ng mga card */
     }
 }
@@ -429,24 +365,72 @@ main {
 /* Media query para sa mobile screens */
 @media (max-width: 576px) {
     .jumbotron {
-        background-size: contain; /* Baguhin ang background size */
-        height: auto; /* Palitan ang height sa auto para sa natural na taas ng laman */
-        padding-top: 20px; /* Bawasan ang padding sa taas */
-        padding-bottom: 20px; /* Bawasan ang padding sa ibaba */
-        margin: 10px; /* Bawasan ang margin */
+        padding: 1rem; /* Pagpalit sa padding para hindi masyadong malaki */
         text-align: center; /* I-center ang text */
-        align-items: center; /* I-center ang mga item */
+        background-size: cover; /* Baguhin ang background size */
+    }
+
+    .card-trivia,
+    .card-care {
+        margin-bottom: 10px; /* Dagdagan ang space sa pagitan ng mga card */
+    }
+
+    #product-cards {
+        display: flex; /* I-set ang display sa flex */
+        flex-wrap: nowrap; /* Huwag mag-wrap ang mga cards, ito ang magpapakita ng isa-isang card */
+        overflow-x: auto; /* I-allow ang horizontal scrolling para sa mga cards na hindi kasya sa screen */
+        width: 100%; /* Pumili ng 100% na lapad para maging full-width */
+        margin-bottom: 10px; /* Dagdagan ang space sa pagitan ng mga card */
+        -webkit-overflow-scrolling: touch; /* Para sa smooth scrolling sa iOS */
+        scroll-snap-type: x mandatory; /* I-set ang scroll-snap sa horizontal axis para sa smooth scrolling */
+    }
+
+    /* I-set ang lapad ng bawat card */
+    .product-card {
+        flex: 0 0 auto; /* I-set ang flex properties para hindi mag-expand ang mga cards */
+        width: calc(100% - 10px); /* Ang 10px na pagitan ayon sa margin */
+        margin-right: 10px; /* Dagdagan ang space sa kanan ng bawat card */
+        scroll-snap-align: start; /* I-align ang mga card sa start ng scroll */
+    }
+
+    /* I-adjust ang margin ng huling card para hindi magkaroon ng extra space */
+    #product-cards .product-card:last-child {
+        margin-right: 0; /* Walang margin sa kanan ng huling card */
     }
 }
 
-@media (max-width: 768px) {
-    #product-cards {
-        width: 50%;
-    }
-}
 
-@media (max-width: 576px) {
+/* Media query para sa pinakamaliit na screens */
+@media (max-width: 375px) {
+    .jumbotron {
+        padding: 0.5rem; /* Pagpalit sa padding para hindi masyadong malaki */
+    }
+
+    .card-trivia,
+    .card-care {
+        margin-bottom: 10px; /* Dagdagan ang space sa pagitan ng mga card */
+    }
+
     #product-cards {
-        width: 100%;
+        display: flex; /* I-set ang display sa flex */
+        flex-wrap: nowrap; /* Huwag mag-wrap ang mga cards, ito ang magpapakita ng isa-isang card */
+        overflow-x: auto; /* I-allow ang horizontal scrolling para sa mga cards na hindi kasya sa screen */
+        width: 100%; /* Pumili ng 100% na lapad para maging full-width */
+        margin-bottom: 10px; /* Dagdagan ang space sa pagitan ng mga card */
+        -webkit-overflow-scrolling: touch; /* Para sa smooth scrolling sa iOS */
+        scroll-snap-type: x mandatory; /* I-set ang scroll-snap sa horizontal axis para sa smooth scrolling */
+    }
+
+    /* I-set ang lapad ng bawat card */
+    .product-card {
+        flex: 0 0 auto; /* I-set ang flex properties para hindi mag-expand ang mga cards */
+        width: calc(100% - 10px); /* Ang 10px na pagitan ayon sa margin */
+        margin-right: 10px; /* Dagdagan ang space sa kanan ng bawat card */
+        scroll-snap-align: start; /* I-align ang mga card sa start ng scroll */
+    }
+
+    /* I-adjust ang margin ng huling card para hindi magkaroon ng extra space */
+    #product-cards .product-card:last-child {
+        margin-right: 0; /* Walang margin sa kanan ng huling card */
     }
 }

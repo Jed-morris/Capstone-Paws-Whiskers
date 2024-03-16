@@ -22,17 +22,20 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav me-auto">
-                        <li class="nav-item">
-                            <a class="nav-link text-light" href="./">Home</a>
+                    <li class="nav-item">
+                          <a class="nav-link text-light" href="./">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-light" href="shop.php">Shop</a>
+                          <a class="nav-link text-light" href="shop.php">Shop</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link text-light" href="about_us.php">About Us</a>
                         </li>
                     </ul>
                     <div class="nav-icons text-light">
-                        <a href="#shopping-cart" style="color: mediumblue;">  <i style="margin-right: 1%;" class="fa-solid fa-cart-shopping justify-content-end fa-xl" ></i></a>
+                        <a href="#shopping-cart" style="color: mediumblue; margin-right: 5%;">  <i style="margin-right: 1%;" class="fa-solid fa-cart-shopping justify-content-end fa-xl" ></i></a>
                         <div class="text-end">
-                            <a href="login.php"><button class="bn14">Log In</button></a>
+                            <a href="login.php"><button class="bn14">Login</button></a>
                         </div>
                     </div>
                 </div>
@@ -46,13 +49,13 @@
     <div class="row row-cols-2 row-cols-md-2 g-4">
       <div class=" col">
         <div class="card">
-          <img src="img/Vitality Valuemeal Adult 1Kg.png" class="card-img-top" alt="drydog_food">
+          <img src="img2/Vitality Valuemeal Adult 1Kg.png" class="card-img-top" alt="drydog_food">
         </div>
       </div>
 
       <div class=" col">
         <div class="card">
-          <img src="img/PEDIGREE® Country Stew 430g.png" class="card-img-top" alt="wetdog_food">
+          <img src="img2/PEDIGREE® Country Stew 430g.png" class="card-img-top" alt="wetdog_food">
         </div>
       </div>
   </div>
@@ -65,7 +68,7 @@
     <div class="row row-cols-2 row-cols-md-4 g-4">
       <div class=" col filter-item all new ">
         <div class="card h-100">
-          <img src="img/Aozi Organic Adult Dog Food 20kg.png" class="card-img-top shop-item-image" alt="...">
+          <img src="img2/Aozi Organic Adult Dog Food 20kg.png" class="card-img-top shop-item-image" alt="...">
           <div class="card-body">
             <h5 class="card-title shop-item-title">Aozi Organic Adult Dog Food 20kg</h5>
             <p class="card-text shop-item-price"> Php 3240.00</p>
@@ -76,7 +79,7 @@
 
       <div class=" col filter-item all new">
         <div class="card h-100">
-          <img src="img/Vitality Valuemeal Adult 20Kg.png" class="card-img-top shop-item-image" alt="...">
+          <img src="img2/Vitality Valuemeal Adult 20Kg.png" class="card-img-top shop-item-image" alt="...">
           <div class="card-body d-flex flex-column">
             <h5 class="card-title shop-item-title">Vitality Valuemeal Adult 20Kg</h5>
             <p class="card-text shop-item-price"> Php 2700.00</p>
@@ -87,7 +90,7 @@
 
       <div class=" col filter-item all new">
         <div class="card h-100">
-          <img src="img/Vitality Valuemeal Puppy 20Kg.png" class="card-img-top shop-item-image" alt="...">
+          <img src="img2/Vitality Valuemeal Puppy 20Kg.png" class="card-img-top shop-item-image" alt="...">
           <div class="card-body">
             <h5 class="card-title shop-item-title">Vitality Valuemeal Puppy 20Kg </h5>
             <p class="card-text shop-item-price"> Php 3300.00</p>
@@ -98,7 +101,7 @@
 
       <div class=" col filter-item all new">
         <div class="card h-100">
-          <img src="img/Vitality Valuemeal Adult 1Kg.png" class="card-img-top shop-item-image " alt="...">
+          <img src="img2/Vitality Valuemeal Adult 1Kg.png" class="card-img-top shop-item-image " alt="...">
           <div class="card-body">
             <h5 class="card-title shop-item-title">Vitality Valuemeal Adult 1Kg
               </h5>
@@ -110,7 +113,7 @@
 
       <div class=" col filter-item all office-wear ">
         <div class="card h-100">
-          <img src="img/PEDIGREE® Steak Canned dogfood 430g.png" class="card-img-top shop-item-image" alt="...">
+          <img src="img2/PEDIGREE® Steak Canned dogfood 430g.png" class="card-img-top shop-item-image" alt="...">
           <div class="card-body">
             <h5 class="card-title shop-item-title">PEDIGREE® Steak Canned dogfood 430g</h5>
             <p class="card-text shop-item-price"> Php 150.00</p>
@@ -121,7 +124,7 @@
 
       <div class=" col filter-item all office-wear">
         <div class="card h-100">
-          <img src="img/PEDIGREE® Country Chicken 430g.png" class="card-img-top shop-item-image" alt="...">
+          <img src="img2/PEDIGREE® Country Chicken 430g.png" class="card-img-top shop-item-image" alt="...">
           <div class="card-body">
             <h5 class="card-title shop-item-title">PEDIGREE® Country Chicken 430g</h5>
             <p class="card-text shop-item-price">Php 150.00</p>
@@ -132,7 +135,7 @@
       
       <div class=" col filter-item all office-wear">
         <div class="card h-100">
-          <img src="img/PEDIGREE® Country Stew 430g.png" class="card-img-top shop-item-image" alt="...">
+          <img src="img2/PEDIGREE® Country Stew 430g.png" class="card-img-top shop-item-image" alt="...">
           <div class="card-body">
             <h5 class="card-title shop-item-title">PEDIGREE® Country Stew 430g</h5>
             <p class="card-text shop-item-price">Php 150.00</p>
@@ -143,7 +146,7 @@
 
       <div class=" col filter-item all office-wear">
         <div class="card h-100">
-          <img src="img/Aozi Lamb Canned Dogfood 430g.png" class="card-img-top shop-item-image" alt="...">
+          <img src="img2/Aozi Lamb Canned Dogfood 430g.png" class="card-img-top shop-item-image" alt="...">
           <div class="card-body">
             <h5 class="card-title shop-item-title">Aozi Lamb Canned Dogfood 430g</h5>
             <p class="card-text shop-item-price">Php 100.00</p>
@@ -224,6 +227,20 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
 <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+<script>
+    // Kunin ang lahat ng mga link sa navbar
+    var navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+
+    // Iterasyon sa bawat link
+    navLinks.forEach(function(navLink) {
+        // I-check kung ang URL ng link ay katulad ng kasalukuyang URL
+        if (navLink.href === window.location.href) {
+            // Kung oo, idagdag ang class "active"
+            navLink.parentNode.classList.add('active');
+        }
+    });
+    </script>
 
 <script>
     // When the user scrolls down 20px from the top of the document, show the button
