@@ -60,22 +60,22 @@
     <!--The slideshow/carousel -->
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="img2/dogs1.1.jpg" alt="dog1" class="d-block" style="width: 100%;">
+          <img src="img/dogs1.1.jpg" alt="dog1" class="d-block" style="width: 100%;">
           </div>
           <div class="carousel-item">
-            <img src="img2/cats1.1.jpg" alt="cat1" class="d-block" style="width: 100%;">
+            <img src="img/cats1.1.jpg" alt="cat1" class="d-block" style="width: 100%;">
           </div>
           <div class="carousel-item">
-            <img src="img2/dogs1.2.jpg" alt="dog2" class="d-block" style="width: 100%;">
+            <img src="img/dogs1.2.jpg" alt="dog2" class="d-block" style="width: 100%;">
           </div>
           <div class="carousel-item">
-            <img src="img2/cats1.2.jpg" alt="cat2" class="d-block" style="width: 100%;">
+            <img src="img/cats1.2.jpg" alt="cat2" class="d-block" style="width: 100%;">
           </div>
           <div class="carousel-item">
-            <img src="img2/dogs1.3.jpg" alt="dog3" class="d-block" style="width: 100%;">
+            <img src="img/dogs1.3.jpg" alt="dog3" class="d-block" style="width: 100%;">
           </div>
           <div class="carousel-item">
-            <img src="img2/cats1.3.jpg" alt="cat3" class="d-block" style="width: 100%;">
+            <img src="img/cats1.3.jpg" alt="cat3" class="d-block" style="width: 100%;">
           </div>   
       </div>
 
@@ -136,7 +136,7 @@
                     <h2>Dry Dog Food</h2>
                     <p>Check out our selection of high-quality dry dog foods!</p>
                     <div class="card-product mx-3">
-                        <img src="img2/Vitality Valuemeal Puppy 1Kg.png" class="card-img-top" alt="dry_dogfood">
+                        <img src="img/Vitality Valuemeal Puppy 1Kg.png" class="card-img-top" alt="dry_dogfood">
                         <div class="card-body">
                             <h5 class="card-title">Vitality- Value Meal Puppy</h5>
                             <p class="card-text">Bestsellers for Dry Dog Food</p>
@@ -148,7 +148,7 @@
                     <h2>Wet Dog Food</h2>
                     <p>Check out our selection of high-quality wet dog foods!</p>
                     <div class="card-product mx-3">
-                        <img src="img2/PEDIGREE® Country Stew 430g.png" class="card-img-top" alt="wet_dogfood">
+                        <img src="img/PEDIGREE® Country Stew 430g.png" class="card-img-top" alt="wet_dogfood">
                         <div class="card-body">
                             <h5 class="card-title">Pedigree- Country Stew</h5>
                             <p class="card-text">Bestsellers of Wet Dog Food</p>
