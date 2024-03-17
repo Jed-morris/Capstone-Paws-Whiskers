@@ -43,6 +43,8 @@
         </nav>
     </header>
 
+<main>
+  <div class="container-fluid pb-4">
 <!-- Item Categories-->
 <section id="category">
   <div class="container-fluid">
@@ -185,10 +187,13 @@
  
 
     <div class="btn-purchase" style="margin-top: 10%;">
-      <button type="button"  class="btn btn-success btn-purchase "><i class="fa-solid fa-cart-shopping " style="margin-right: 6%;"></i>PURCHASE</button>
+      <button type="button"  class="btn btn-success btn-purchase "><i class="fa-solid fa-cart-shopping " style="margin-right: 6%;"></i>BUY</button>
     </div>
 
 </section>
+
+  </div>
+</main>
 
 <!--Footer-->
   <footer class="footer">

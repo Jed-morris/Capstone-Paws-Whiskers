@@ -88,7 +88,7 @@ function addItemToCart(title, price, imageSrc){
             <span class="cart-price cart-column">${price}</span>
         </td>
         <td class="cart-item cart-column">
-            <input class="cart-quantity-input" type="number" value="1" style="width: 50px">
+            <input class="cart-quantity-input" type="number" value="1" style="width: 70px">
             <button class="btn btn-danger" type="button">Remove</button>
         </td>        
     `;

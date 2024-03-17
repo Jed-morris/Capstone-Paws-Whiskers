@@ -9,7 +9,7 @@
     <title>Login Page- Paws and Whiskers</title>
 
     <style>
-        body {
+    body {
     background-image: url('img/dogs2.1.jpg');
     background-size: cover;
     background-position: center;
@@ -19,38 +19,51 @@
 
     .transparent-card {
     background-color: rgba(255, 255, 255, 0.7);
+    max-width: 450px;
+    margin: 0 auto;
+    padding: 20px;
     }
+
+    @media (max-width: 576px) {
+    .card.transparent-card {
+        max-width: 100%;
+    }
+
+    .card.transparent-card .shadow {
+        width: 100%;
+        max-width: 100%;
+    }
+}
     </style>
-
 </head>
-<body>
-    
-    <div class="d-flex justify-content-center align-items-center vh-100">
-                <div class="card transparent-card">
-                    <div class="card-body">
-                      <a href="index.php" class="btn btn-light d-flex justify-content-center align-items-center" style="width: 40px; height: 40px; border-radius: 50%;"><i class="fas fa-home flex justify-content-center align-items-center"></i></a>
-                        <h2 class="text-center">Log In</h2>   
-                        <hr>                 
 
-                          <form class="shadow w-450 p3" action="login1.php" method="post">
-                            
-                            <div class="mb-3">
-                                <label for="username" class="form-label">Username</label>
-                                <input type="text" class="form-control" id="username" name="uname" value="<?php echo (isset($_GET['uname'])) ? $_GET['uname'] : "" ?>" placeholder="Enter your username" required>
-                            </div>
-                            <div class="mb-3">
-                                <label for="password" class="form-label">Password</label>
-                                <input type="password" class="form-control" id="password" name="pass" placeholder="Enter your password" required>
-                            </div>
-                            <div class="d-grid">
-                                <button type="submit" class="btn btn-primary">Log In</button>
-                            </div>
-                        </form>
-                        <hr>
-                        <p class="text-center">Don't have an account? <a href="signup.php">Sign up</a></p>
-                    </div>
+<body>    
+<div class="d-flex justify-content-center align-items-center vh-100">
+    <div class="card transparent-card">
+        <div class="card-body">
+            <a href="index.php" class="btn btn-light d-flex justify-content-center align-items-center" style="width: 40px; height: 40px; border-radius: 50%;"><i class="fas fa-home fa-fw"></i></a>
+            <h2 class="text-center">Log In</h2>
+            <hr>
+
+            <form class="shadow w-450 p3" action="login1.php" method="post">
+
+                <div class="mb-3">
+                    <label for="username" class="form-label">Username</label>
+                    <input type="text" class="form-control" id="username" name="uname" placeholder="Enter your username" required>
                 </div>
+                <div class="mb-3">
+                    <label for="password" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="password" name="pass" placeholder="Enter your password" required>
+                </div>
+                <div class="d-grid">
+                    <button type="submit" class="btn btn-primary">Log In</button>
+                </div>
+            </form>
+            <hr>
+            <p class="text-center">Don't have an account? <a href="signup.php">Sign up</a></p>
+        </div>
     </div>
+</div>
 
 </body>
 </html>

@@ -11,8 +11,13 @@
     
     <style>
 /* Container styles */
+.about-container {
+    padding-top: 60px;
+    margin-top: auto;
+}
+
 .container {
-    margin-top: 75px;
+    padding-top: 50px;
 }
 
 /* Section headings */
@@ -124,8 +129,8 @@ p {
     </header>
 
 <main>
-    <div class="container">
-        <article>
+    <div class="about-container">
+        <article class="container">
             <div class="row">
                 <div class="col-md-8">
                     <h2>About Us</h2>
