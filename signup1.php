@@ -40,7 +40,7 @@ if (isset($_POST['fname']) &&
     }
 
     // Hashing password
-    //$pass = password_hash($pass, PASSWORD_DEFAULT);
+    $pass = password_hash($pass, PASSWORD_DEFAULT);
 
     // Insert user data into the database
     $sql = "INSERT INTO users(username, first_name, last_name, contact_number, email, password)
